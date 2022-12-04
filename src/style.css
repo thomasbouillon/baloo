@@ -1,0 +1,234 @@
+:root {
+    --clr-primary: #b1d9f3;
+    --clr-bg-white: #fff;
+    --clr-bg-light: rgb(238, 238, 238);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+.h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+}
+
+.h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+}
+
+.h3 {
+    font-size: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+
+section {
+    background-color: var(--clr-bg-white);
+    position: relative;
+    z-index: 0;
+}
+
+.header {
+    position: relative;
+}
+
+.header > img {
+    width: 100%;
+}
+
+.header__content {
+    position: absolute;
+    right: 2rem;
+    top: 3rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    text-align: center;
+}
+
+.header__content img {
+    width: 10rem;
+}
+
+.mountain-top {
+    fill: var(--clr-primary);
+    box-shadow: inset 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.activities {
+    padding-bottom: 1rem;
+}
+
+.activities svg {
+    width: 100%;
+    aspect-ratio: calc(367.14813 / 83.015999);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.activities h2 {
+    padding-top: 3rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-bg-light);
+    border-radius: 2rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.card__description {
+    margin: 0 1rem 1rem 1rem;
+    flex-grow: 1;
+    font-size: 0.85rem;
+}
+
+.card__cta {
+    text-align: center;
+    color: inherit;
+}
+
+.kennel-presentation {
+    min-height: min(100vh, 35rem);
+    padding: 0 1.5rem 1.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.kennel-presentation h2 {
+    padding: 0;
+}
+
+.kennel-presentation .section__bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.kennel-presentation > div > p + p {
+    margin-top: 1.5rem;
+}
+
+.kennel-presentation > div {
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.steve-presentation {
+    display: grid;
+    grid-template-columns: 15rem auto;
+    place-content: center;
+    gap: 3rem;
+}
+.steve-presentation img {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    margin-top: -2.5rem;
+    width: 100%;
+}
+.steve-presentation div {
+    max-width: 60ch;
+    padding-top: 2rem;
+}
+
+.steve-presentation div > * + * {
+    margin-top: 1rem;
+}
+
+.dogs-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.dog {
+    flex-basis: 22rem;
+}
+
+.dog img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.dogs-presentation > div {
+    background-color: var(--clr-primary);
+    position: relative;
+}
+
+.dogs-presentation .background {
+    width: 100%;
+    aspect-ratio: 1916/410;
+    margin-bottom: -1.5rem;
+}
+
+.dogs-presentation .description {
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3rem;
+}
+
+.dogs-presentation .description h2 {
+    margin-bottom: 2rem;
+}
+
+.dogs-presentation .description p + p {
+    margin-top: 1rem;
+}
