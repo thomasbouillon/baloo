@@ -192,6 +192,7 @@ section {
 
 .kennel-presentation .section__bg {
     width: 100vw;
+    overflow: hidden;
     height: 100%;
     position: absolute;
     top: 0;

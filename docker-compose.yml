@@ -3,3 +3,9 @@ services:
     build: .
     environment:
         VIRTUAL_HOST: thomasbouillon.fr
+    networks:
+      - vps-proxy
+
+networks:
+  vps-proxy:
+    external: true
