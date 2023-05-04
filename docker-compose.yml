@@ -3,6 +3,8 @@ services:
     build: .
     environment:
         VIRTUAL_HOST: thomasbouillon.fr
+    ports:
+      - 8080:80
     networks:
       - vps-proxy
 

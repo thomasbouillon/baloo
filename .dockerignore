@@ -1,0 +1,10 @@
+.next
+.vscode
+build
+out
+node_modules
+next-env.d.ts
+README.md
+Dockerfile
+docker-compose.yml
+.gitignore
